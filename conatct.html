@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="portfolio.html">Back to Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <input type="checkbox" id="contact-email" name="contact-method" value="Email"> Email
+        <input type="checkbox" id="contact-phone" name="contact-method" value="Phone"> Phone
+        <input type="checkbox" id="contact-text" name="contact-method" value="Text"> Text
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Inquiry Type:</legend>
+        <input type="radio" id="general" name="inquiry" value="General" required> General
+        <input type="radio" id="business" name="inquiry" value="Business"> Business
+        <input type="radio" id="support" name="inquiry" value="Support"> Support
+      </fieldset><br>
+
+      
+      <label for="topic">Topic of Interest:</label>
+      <select id="topic" name="topic">
+        <option value="portfolio">Portfolio</option>
+        <option value="webdev">Web Development</option>
+        <option value="design">Design</option>
+      </select><br><br>
+
+      <label for="date">Preferred Contact Date:</label>
+      <input type="date" id="date" name="contact-date"><br><br>
+
+      <label for="urgency">Urgency (1–10):</label>
+      <input type="range" id="urgency" name="urgency" min="1" max="10"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Udhay Sharma</p>
+  </footer>
+</body>
+</html>
